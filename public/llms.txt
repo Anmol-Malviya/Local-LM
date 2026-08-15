@@ -1,0 +1,22 @@
+# PEN-LLM — Offline AI on Your Pendrive
+
+> PEN-LLM is an open-source, plug-and-play offline Large Language Model system configured to run directly from any standard USB pendrive on Windows PCs without requiring internet connectivity, cloud accounts, or telemetry.
+
+## Key Facts
+- **Architecture**: Portable llama.cpp server with web chat UI.
+- **Portability**: 100% self-contained on a USB drive. Plug into any PC and launch via `run.bat`.
+- **Privacy**: 0 KB telemetry. No data sent to external servers or cloud providers.
+- **Hardware Requirement**: Windows 10/11 64-bit PC, USB 3.0/3.2 flash drive (32GB+ recommended), 8GB+ RAM.
+- **Access URL**: Runs locally at `http://localhost:8080`.
+
+## Quick Links
+- [Main Landing Page](https://pen-llm.vercel.app/)
+- [Download Package](https://drive.google.com/drive/folders/1N_r7mJ-cgrx-1TRVa-RjPcUWhJTb2x8T?usp=sharing)
+- [Setup & Install Guide](https://pen-llm.vercel.app/#install)
+- [Features](https://pen-llm.vercel.app/#features)
+- [FAQ](https://pen-llm.vercel.app/#faq)
+
+## Core Capabilities
+- Offline AI text generation, summarization, coding assistance, and reasoning.
+- Browser-based clean chat interface served locally at port 8080.
+- Zero installation footprint on the host computer.

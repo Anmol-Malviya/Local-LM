@@ -39,12 +39,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 3: Legal */}
+          {/* Column 3: Legal & Help */}
           <div className={styles.linkCol}>
-            <h4 className={styles.colTitle}>Legal</h4>
+            <h4 className={styles.colTitle}>Support & Info</h4>
             <div className={styles.colLinks}>
-              <a href="#hero" className={styles.link}>Privacy Policy</a>
-              <a href="#install" className={styles.link}>FAQ</a>
+              <a href="#faq" className={styles.link}>FAQ</a>
+              <a href="https://github.com/Anmol-Malviya/Local-LM" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub Repository</a>
             </div>
           </div>
         </div>

@@ -26,8 +26,8 @@ export default function Navbar() {
         <div className={styles.links}>
           <a href="#features" className={styles.link}>Features</a>
           <a href="#install"  className={styles.link}>Install Guide</a>
+          <a href="#faq"      className={styles.link}>FAQ</a>
           <a href="#download" className={styles.link}>Download</a>
-          <a href="#install"  className={styles.link}>FAQ</a>
         </div>
 
         <a

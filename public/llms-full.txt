@@ -1,0 +1,28 @@
+# PEN-LLM Complete Documentation & Knowledge Base
+
+## Overview
+PEN-LLM enables users to carry and operate state-of-the-art offline Large Language Models entirely from a USB pendrive. It eliminates cloud subscriptions, privacy risks, and internet dependencies by packaging an optimized runtime (llama.cpp) and model files directly onto portable storage.
+
+## How It Works
+1. **Portable Runtime**: High-performance C/C++ inference runtime (llama.cpp) optimized for CPU and GPU execution on x86_64 Windows systems.
+2. **Local HTTP Server**: When `run.bat` is launched, a local web server starts on `localhost:8080`.
+3. **Web User Interface**: The user opens their browser to `http://localhost:8080` to chat with the offline model with markdown rendering, system prompts, parameter tuning, and conversation management.
+
+## Installation Steps
+1. **Download Files**: Download all files from the official Google Drive folder.
+2. **Format Pendrive**: Format a USB flash drive (FAT32 or NTFS, USB 3.0+ recommended).
+3. **Copy Files**: Place `models/`, `llama-server/`, and `run.bat` into the pendrive root.
+4. **Launch & Chat**: Double-click `run.bat` and navigate to `http://localhost:8080`.
+
+## Frequently Asked Questions
+### What is PEN-LLM?
+PEN-LLM is a portable solution for executing generative AI models completely offline from a USB drive.
+
+### Does PEN-LLM require an internet connection?
+No. Once files are downloaded onto the pendrive, PEN-LLM operates in completely air-gapped environments without network access.
+
+### What are the minimum system requirements?
+Windows 10/11 (64-bit), 8 GB RAM (16 GB recommended), USB 3.0/3.2 port with high-speed read rates.
+
+### Is conversation data stored or sent anywhere?
+No. Everything stays on the local machine and pendrive. Zero telemetry, zero analytics tracking of prompts or answers.
