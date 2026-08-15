@@ -1,37 +1,17 @@
 export default function sitemap() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pen-llm.vercel.app';
-  const lastModified = new Date();
+  const lastModified = new Date().toISOString();
 
   return [
     {
       url: baseUrl,
       lastModified,
-      changeFrequency: 'weekly',
+      changeFrequency: 'daily',
       priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/#features`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#install`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/#faq`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#download`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.9,
+      images: [
+        `${baseUrl}/hero-pendrive.png`,
+        `${baseUrl}/logo.png`,
+      ],
     },
   ];
 }

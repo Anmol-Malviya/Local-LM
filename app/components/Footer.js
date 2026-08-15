@@ -19,32 +19,47 @@ export default function Footer() {
             <p className={styles.copy}>Built with ❤️ for offline AI freedom.</p>
           </div>
 
-          {/* Column 1: Quick Links */}
+          {/* Column 1: Navigation */}
           <div className={styles.linkCol}>
-            <h4 className={styles.colTitle}>Quick Links</h4>
+            <h4 className={styles.colTitle}>Navigation</h4>
             <div className={styles.colLinks}>
-              <a href="#features" className={styles.link}>Features</a>
-              <a href="#install" className={styles.link}>Install Guide</a>
+              <a href="#hero" className={styles.link}>Overview</a>
+              <a href="#features" className={styles.link}>Core Features</a>
+              <a href="#install" className={styles.link}>Installation Guide</a>
+              <a href="#faq" className={styles.link}>FAQ &amp; Troubleshooting</a>
+              <a href="#download" className={styles.link}>Download Files</a>
             </div>
           </div>
 
-          {/* Column 2: Download */}
+          {/* Column 2: Open Source Ecosystem */}
           <div className={styles.linkCol}>
-            <h4 className={styles.colTitle}>Download</h4>
+            <h4 className={styles.colTitle}>Ecosystem &amp; Tech</h4>
             <div className={styles.colLinks}>
-              <a href="#download" className={styles.link}>Download</a>
+              <a href="https://github.com/ggerganov/llama.cpp" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                llama.cpp Engine ↗
+              </a>
+              <a href="https://huggingface.co/models?search=gguf" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                Hugging Face GGUF ↗
+              </a>
+              <a href="https://github.com/Anmol-Malviya/Local-LM" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                GitHub Project ↗
+              </a>
               <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer" className={styles.link}>
-                Open Llama UI
+                Local UI (Port 8080)
               </a>
             </div>
           </div>
 
-          {/* Column 3: Legal & Help */}
+          {/* Column 3: Resources */}
           <div className={styles.linkCol}>
-            <h4 className={styles.colTitle}>Support & Info</h4>
+            <h4 className={styles.colTitle}>Resources &amp; Data</h4>
             <div className={styles.colLinks}>
-              <a href="#faq" className={styles.link}>FAQ</a>
-              <a href="https://github.com/Anmol-Malviya/Local-LM" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub Repository</a>
+              <a href="/sitemap.xml" className={styles.link} target="_blank" rel="noopener noreferrer">XML Sitemap</a>
+              <a href="/robots.txt" className={styles.link} target="_blank" rel="noopener noreferrer">Robots Directives</a>
+              <a href="/llms.txt" className={styles.link} target="_blank" rel="noopener noreferrer">AI Crawler Doc (llms.txt)</a>
+              <a href="https://drive.google.com/drive/folders/1N_r7mJ-cgrx-1TRVa-RjPcUWhJTb2x8T?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                Google Drive Storage ↗
+              </a>
             </div>
           </div>
         </div>

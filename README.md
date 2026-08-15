@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PEN-LLM — Offline AI on Your Pendrive 🚀
 
-## Getting Started
+[![Live Website](https://img.shields.io/badge/Website-pen--llm.vercel.app-6366f1?style=for-the-badge&logo=vercel)](https://pen-llm.vercel.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Powered by llama.cpp](https://img.shields.io/badge/Engine-llama.cpp-yellow?style=for-the-badge&logo=c%2B%2B)](https://github.com/ggerganov/llama.cpp)
+[![Offline AI](https://img.shields.io/badge/Offline%20AI-100%25%20Air--Gapped-green?style=for-the-badge)](https://pen-llm.vercel.app/#features)
 
-First, run the development server:
+> **[PEN-LLM (https://pen-llm.vercel.app)](https://pen-llm.vercel.app)** is a plug-and-play offline Large Language Model system configured to run directly from standard USB flash drives on Windows PCs without requiring internet connectivity, cloud accounts, or telemetry.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Official Website & Resources
+- **Live Website**: [https://pen-llm.vercel.app](https://pen-llm.vercel.app)
+- **Direct Download**: [Google Drive Download Folder](https://drive.google.com/drive/folders/1N_r7mJ-cgrx-1TRVa-RjPcUWhJTb2x8T?usp=sharing)
+- **Setup Guide**: [https://pen-llm.vercel.app/#install](https://pen-llm.vercel.app/#install)
+- **FAQ**: [https://pen-llm.vercel.app/#faq](https://pen-llm.vercel.app/#faq)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
+- **100% Offline**: Works in remote locations, air-gapped secure labs, airplanes, and offline computers.
+- **Zero Telemetry**: Complete data privacy. Prompts and outputs never touch external cloud servers.
+- **Portable Intelligence**: Store models, server binaries, and configuration on a USB 3.0/3.2 flash drive.
+- **Built-in Web Chat UI**: Powered by `llama.cpp`'s high-speed local web server at `http://localhost:8080`.
+- **One-Click Launch**: Double-click `run.bat` and begin chatting immediately.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Quick Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Download files** from the [official storage repository](https://drive.google.com/drive/folders/1N_r7mJ-cgrx-1TRVa-RjPcUWhJTb2x8T?usp=sharing).
+2. **Format your pendrive** to NTFS or FAT32 (32GB+ USB 3.0 recommended).
+3. **Copy files** (`models/`, `llama-server/`, and `run.bat`) into the root directory of your USB pendrive.
+4. **Double click `run.bat`** on your drive and open [http://localhost:8080](http://localhost:8080) in your web browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💻 Tech Stack & Architecture
+- **Inference Runtime**: [llama.cpp](https://github.com/ggerganov/llama.cpp)
+- **Web App**: [Next.js 16 (App Router)](https://nextjs.org), React 19, Vanilla CSS
+- **Analytics & Tracking**: MongoDB Atlas
+- **SEO & AEO Engine**: Full Schema.org JSON-LD structured data, dynamic XML sitemaps, and `llms.txt` crawler specs.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
