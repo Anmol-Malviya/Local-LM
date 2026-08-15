@@ -17,7 +17,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pen-llm.vercel.app';
-const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const googleVerification =
+  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+  'l7UHVfX0v0ptKBOr9NX-xxPeF_af8ii22F3CP0OQz-c';
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -178,6 +180,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${outfit.variable} ${jetbrainsMono.variable}`}>
       <head>
+        <meta name="google-site-verification" content={googleVerification} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -190,4 +193,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
 
